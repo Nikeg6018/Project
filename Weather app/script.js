@@ -1,5 +1,5 @@
 let weather = {
-    apiKey: "0b1c935cbe011b56985775cda4750d3b",
+    apiKey: "0b1c935cbe011b56985775cda4750d3bgna",
     fetchWeather: function (city) {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q="
@@ -13,7 +13,7 @@ let weather = {
     displayWeather: function (data) {
         const { name } = data;
         const { icon, description } = data.weather[0];
-        const { temp, humidity } = data.main;
+        const { temp, humidity, pressure } = data.main;
         const { speed } = data.wind;
         // console.log(name, icon, description, temp, humidity, speed);
         document.querySelector(".city").innerHTML = "Weather in " + name;
@@ -25,6 +25,7 @@ let weather = {
         document.querySelector(".temp").innerHTML = temp + " ℃";
         document.querySelector(".humidity").innerHTML = "Humidity : " + humidity + "%";
         document.querySelector(".wind").innerHTML = "Wind Speed : " + speed + " Km/h";
+        document.querySelector(".pressure").innerHTML = "Pressure : " + pressure / 1000 + " Bar";
         document.querySelector(".weather").classList.remove("loading");
         document.body.style.background = "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
