@@ -1,0 +1,9 @@
+https://rest.coinapi.io/v1/assets/icons/400x400?apikey=5ACC21018377448190DF6A3117D21E3C&invert=true&output_format=json
+
+https://rest.coinapi.io/v1/assets/BTC?apikey=5ACC21018377448190DF6A3117D21E3C&website&invert=true&output_format=json
+
+https://rest.coinapi.io/v1/exchangerate/USD?apikey=5ACC21018377448190DF6A3117D21E3C&website&invert=true&output_format=json
+
+https://docs.coinapi.io/#list-all-assets-get
+
+5ACC21018377448190DF6A3117D21E3C
